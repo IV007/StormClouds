@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Storm Clouds</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ERROR_MSG_HEADER">Oops! Sorry!</string>
+    <string name="ERROR_MSG_BODY">There was a connection error. Make sure you\'re connected to a network or wifi and try again</string>
+    <string name="ERROR_MSG_OK_BUTTON">OK</string>
+    <string name="NETWORK_UNAVAILABLE">No network connection, check settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_weekly_forecast">Storm Clouds</string>
+    <string name="new_weather">Storm Clouds</string>
+    <string name="device_location_unknown">Please click the GPS icon for location data</string>
+    <string name="gps_icon">gpsIcon</string>
+    <string name="title_activity_location_settings">Location Settings</string>
+    <string name="no_weekly_data">There is no data to display </string>
+    <string name="location_unknown">We can\'t determine your location, please click the settings icon</string>
+    <string name="title_activity_hourly_forecast">Today\'s Weather (hours)</string>
+    <string name="title_activity_daily_details">Daily Details</string>
+    <string name="LOCATION_LISTVIEW_EMPTY">Watch here for saved locations</string>
+    <string name="LOCATION_ADD">Add</string>
+    <string name="LOCATION_GET_LOCATION_BUTTON">Get location</string>
+</resources>

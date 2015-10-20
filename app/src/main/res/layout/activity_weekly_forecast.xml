@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="sidelance.com.stormclouds.modules.weekly.WeeklyForecastActivity"
+                android:background="@drawable/sunset_bg_gradient"
+                android:id="@+id/weeklyRootLayout">
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_above="@+id/locationLabel"
+        android:layout_below="@+id/thisWeekLabel"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_weekly_data"
+        android:id="@android:id/empty"
+        android:textSize="20sp"
+        android:drawableTop="@drawable/ic_info"
+        android:textStyle="bold|italic"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Week&apos;s Weather"
+        android:id="@+id/thisWeekLabel"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birmingham, Alabama"
+        android:id="@+id/locationLabel"
+        android:textColor="#ffffffff"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/playAnimationButton"
+        android:layout_alignLeft="@android:id/list"
+        android:layout_alignRight="@android:id/list"
+        android:gravity="center"
+        android:singleLine="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playAnimationButton"
+        android:drawableTop="@drawable/ic_play_animation"
+        android:drawableStart="@drawable/ic_play_animation"
+        android:drawableEnd="@drawable/ic_play_animation"
+        android:drawableBottom="@drawable/ic_play_animation"
+        android:text="Play"
+        android:typeface="serif"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playAnimationButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:drawableTop="@drawable/ic_play_animation"
+        android:drawableStart="@drawable/ic_play_animation"
+        android:drawableEnd="@drawable/ic_play_animation"
+        android:drawableBottom="@drawable/ic_play_animation"
+        android:typeface="serif"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light rain today and tomorrow, with temperatures falling to 82°F on Tuesday."
+        android:id="@+id/weekSummaryLabel"
+        android:textColor="#80ffffff"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:gravity="center"
+        android:layout_below="@+id/thisWeekLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

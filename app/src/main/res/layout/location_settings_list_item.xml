@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/partly_cloudy_day_bg_gradient"
+              android:id="@+id/locationItemListView"
+                android:gravity="center_horizontal"
+    android:paddingLeft="@dimen/activity_daily_details_margin_left"
+    android:paddingRight="@dimen/activity_daily_details_margin_left"
+    android:paddingStart="@dimen/activity_daily_details_margin_left"
+    android:paddingEnd="@dimen/activity_daily_details_margin_left">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="70"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birmingham, Alabama"
+                android:id="@+id/savedLocationLabel"
+                android:textColor="#ffffffff"
+                android:textSize="22sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08/15/2015"
+                android:id="@+id/savedLocationDateLabel"
+                android:textColor="#ffffffff"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteSavedLocationLabel"
+            android:src="@drawable/ic_minus"
+            android:scaleType="fitXY"
+            android:layout_alignBottom="@+id/linearLayout3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

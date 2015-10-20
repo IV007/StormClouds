@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:background="#ffaa00"
+    android:paddingLeft="32dp"
+    android:paddingStart="64dp"
+    android:paddingEnd="16dp"
+    android:paddingRight="8dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/circleImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/bg_temperature"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconImageView"
+        android:src="@drawable/clear_day"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/circleImageView"
+        android:layout_toEndOf="@+id/circleImageView"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayNameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iconImageView"
+        android:layout_toEndOf="@+id/iconImageView"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:paddingRight="5dp"
+        tools:text="Wednesday"
+        android:gravity="center|left"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempLabel"
+        android:textColor="#f25019"
+        tools:text="100"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/circleImageView"
+        android:layout_toStartOf="@+id/iconImageView"
+        android:layout_alignLeft="@+id/circleImageView"
+        android:layout_alignBottom="@+id/circleImageView"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/circleImageView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No precipitation throughout the week, with temperatures falling to 69°F on Tuesday."
+        android:id="@+id/dailySummaryLabel"
+        android:layout_below="@+id/dayNameLabel"
+        android:layout_alignLeft="@+id/dayNameLabel"
+        android:textColor="#ffffffff"
+        android:textSize="10sp"
+        android:gravity="center|left"
+        android:singleLine="false"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:password="false"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>
